@@ -1,0 +1,54 @@
+@import "../../styles/_variables";
+
+.certificates {
+  background-color: $white;
+  border-radius: 12px;
+  width: 413px;
+  height: fit-content;
+
+  @media only screen and (max-width: $medium) {
+    width: fit-content;
+    background-color: $white;
+  }
+
+  h2 {
+    font: 500 24px "Montserrat", sans-serif;
+    color: $light-black;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+
+    li {
+      margin-left: -25px;
+      padding-right: 10px;
+
+      h4 {
+        font: 600 18px "Montserrat", sans-serif;
+        font-style: italic;
+        color: $gray-black;
+        margin-top: 15px;
+      }
+
+      .certificate-row {
+        display: grid;
+        grid-template-columns: 230px 150px;
+
+        h6 {
+          font: 800 16px "Montserrat", sans-serif;
+          color: $light-black;
+          flex: 1 0 calc(50% - 10px);
+        }
+
+        time {
+          font: 500 14px "Montserrat", sans-serif;
+          color: $battleship-gray;
+          flex: 1 0 calc(50% - 10px);
+        }
+      }
+    }
+  }
+}

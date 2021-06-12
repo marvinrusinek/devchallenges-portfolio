@@ -1,0 +1,13 @@
+<section class="certificates">
+  <h2 class="heading">Certificates</h2>
+
+  <ul *ngFor="let certificate of certificates">
+    <li>
+      <h4>{{ certificate.certTitle }}</h4>
+      <div class="certificate-row">
+        <h6>{{ certificate.provider }}</h6>
+        <time>{{ certificate.dateCompleted }}</time>
+      </div>
+    </li>
+  </ul>
+</section>

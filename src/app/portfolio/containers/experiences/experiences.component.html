@@ -1,0 +1,16 @@
+<section class="experiences">
+  <h2>Experiences</h2>
+
+  <ul class="positions" *ngFor="let experience of experiences">
+    <li class="position">
+      <a [href]="experience.url" target="blank">
+        <img src={{experience.logo}} loading="lazy" alt={{experience.company}} title="{{experience.company}}" />
+      </a>
+      <div class="position__details">
+        <h3 class="position__duration">{{ experience.duration }}</h3>
+        <h2 class="position__title">{{ experience.title }}</h2>
+        <p class="position__summary">{{ experience.summary }}</p>
+      </div>
+    </li>
+  </ul>
+</section>

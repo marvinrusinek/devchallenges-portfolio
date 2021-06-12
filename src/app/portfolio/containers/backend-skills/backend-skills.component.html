@@ -1,0 +1,11 @@
+<section class="backend-skills">
+  <h2 class="skills-category">Back end</h2>
+  <ul class="backend-list" *ngFor="let skill of backendSkills">
+    <li class="backend-skill">
+      <span class="skill-name">{{ skill.skillName }}</span>
+      <div class="progress-bar">
+        <div class="progress-bar--fill" [style.width.%]="skill.percentage"></div>
+      </div>
+    </li>
+  </ul>
+</section>

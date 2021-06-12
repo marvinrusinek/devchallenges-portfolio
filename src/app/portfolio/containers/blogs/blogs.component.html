@@ -1,0 +1,7 @@
+<section class="blogs">
+  <mat-card class="heading-card">
+    <h2 class="portfolio-heading" *ngIf="blogs">Blogs ({{ blogs.length }})</h2>
+  </mat-card>
+
+  <app-blog *ngFor="let blog of blogs" [blog]="blog"></app-blog>
+</section>

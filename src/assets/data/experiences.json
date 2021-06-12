@@ -1,0 +1,26 @@
+[
+  {
+    "company": "AngularNYC",
+    "url": "https://www.angular.nyc",
+    "logo": "assets/images/experience/angularnyc.png",
+    "duration": "Sep 2019 - Current",
+    "title": "Application Developer",
+    "summary": "Develop a quiz app feature for open-source Angular Codelab project using Angular, TypeScript, RxJS and NgRx."
+  },
+  {
+    "company": "SCO Group",
+    "url": "https://www.shoecenter.com",
+    "logo": "assets/images/experience/sco_group.webp",
+    "duration": "Jan 2016 - Sep 2018",
+    "title": "Operations Coordinator",
+    "summary": "Generated shipping labels, performed scan put-away and photographed new products."
+  },
+  {
+    "company": "American Jewish Historical Society",
+    "url": "https://www.ajhs.org",
+    "logo": "assets/images/experience/AJHS-logo.jpg",
+    "duration": "Feb 2006 - Oct 2015",
+    "title": "Archivist/Librarian/Webmaster",
+    "summary": "Processed personal and institutional archival collections, wrote and encoded finding aids, supervised library barcoding project and maintained the AJHS website."
+  }
+]

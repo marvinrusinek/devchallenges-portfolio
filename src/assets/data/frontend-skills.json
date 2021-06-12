@@ -1,0 +1,26 @@
+[
+  {
+    "skillName": "HTML5",
+    "percentage": "90"
+  },
+  {
+    "skillName": "CSS3",
+    "percentage": "90"
+  },
+  {
+    "skillName": "JavaScript",
+    "percentage": "70"
+  },
+  {
+    "skillName": "Angular",
+    "percentage": "80"
+  },
+  {
+    "skillName": "RxJS",
+    "percentage": "70"
+  },
+  {
+    "skillName": "NgRx",
+    "percentage": "60"
+  }
+]

@@ -1,0 +1,59 @@
+@import "../../styles/_variables";
+
+.education {
+  background-color: $white;
+  border-radius: 12px;
+  width: 413px;
+  height: fit-content;
+
+  h2 {
+    font: 500 24px "Montserrat", sans-serif;
+    color: $light-black;
+  }
+
+  .schools {
+    list-style-type: none;
+    margin-top: 20px;
+
+    .school {
+      margin-left: -35px;
+      display: grid;
+      grid-template-columns: 200px auto;
+
+      img {
+        width: 180px;
+        height: 120px;
+
+        @media only screen and (max-width: $small) {
+          width: 120px;
+          height: 100px;
+        }
+      }
+
+      .education-details {
+        margin-left: 20px;
+
+        @media only screen and (max-width: $small) {
+          margin-left: -60px;
+        }
+
+        .school-name {
+          font: 600 16px "Montserrat", sans-serif;
+          color: $gray-black;
+        }
+
+        .period {
+          font: 500 14px "Montserrat", sans-serif;
+          color: $battleship-gray;
+        }
+
+        .degree {
+          font: 500 16px "Montserrat", sans-serif;
+          color: $battleship-gray;
+          line-height: 20px;
+          width: 273px;
+        }
+      }
+    }
+  }
+}

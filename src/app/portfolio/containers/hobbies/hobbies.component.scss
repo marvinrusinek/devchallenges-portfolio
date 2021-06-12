@@ -1,0 +1,48 @@
+@import "../../styles/_variables";
+
+.hobbies {
+  background-color: $white;
+  border-radius: 12px;
+  width: 413px;
+  height: 100%;
+
+  @media only screen and (max-width: $small) {
+    width: 100%;
+  }
+
+  h2 {
+    font: 500 24px "Montserrat", sans-serif;
+    color: $light-black;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    li {
+      margin-left: -30px;
+
+      img {
+        width: 383px;
+        height: 139px;
+        border-radius: 12px;
+      }
+
+      h4 {
+        font: 600 18px "Montserrat", sans-serif;
+        color: $gray-black;
+        margin-top: 15px;
+      }
+
+      p {
+        font: 500 16px "Montserrat", sans-serif;
+        color: $battleship-gray;
+        line-height: 20px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

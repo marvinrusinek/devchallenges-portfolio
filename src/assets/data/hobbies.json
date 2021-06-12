@@ -1,0 +1,17 @@
+[
+  {
+    "image": "assets/images/laptopcoffee.png",
+    "hobby": "Coding",
+    "description": "I have been programming since the age of 10."
+  },
+  {
+    "image": "assets/images/music_concert.jpg",
+    "hobby": "Music",
+    "description": "I listen to a lot of music, especially 90's alternative rock."
+  },
+  {
+    "image": "assets/images/running.jpeg",
+    "hobby": "Running",
+    "description": "I run a lot to stay fit."
+  }
+]

@@ -1,0 +1,33 @@
+<section class="projects" *ngIf="projects">
+  <mat-card>
+    <h2 class="heading">Projects ({{ projects.length }})</h2>
+
+    <div class="filters-container">
+      <div class="filters button-group">
+        <div *ngFor="let filter of filters">
+          <button class="button" [class.active]="filterBy==filter.filter" (click)="filterBy=filter.filter">
+            <img src={{filter.icon}} loading="lazy" />&nbsp;<span>{{ filter.name }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+  <app-project *ngFor="let project of projects | projectFilter:filterBy
+                                               | paginate: { itemsPerPage: 3, currentPage: page }"
+               [project]="project"></app-project>
+
+  <pagination-controls
+    (pageChange)="page = $event"
+    class="align-pagination-controls"
+    previousLabel="&lt;"
+    nextLabel="&gt;"
+    maxSize="9"
+    directionLinks="true"
+    autoHide="true"
+    responsive="true"
+    screenReaderPaginationLabel="Pagination"
+    screenReaderPageLabel="page"
+    screenReaderCurrentLabel="You&apos;re on page"
+  ></pagination-controls>
+</section>

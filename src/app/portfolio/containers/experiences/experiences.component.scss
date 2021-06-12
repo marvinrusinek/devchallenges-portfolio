@@ -1,0 +1,68 @@
+@import "../../styles/_variables";
+
+.experiences {
+  background-color: $white;
+  border-radius: 12px;
+  width: 413px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 25px;
+
+  @media only screen and (max-width: $medium) {
+    width: fit-content;
+    background-color: $white;
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-column-gap: 10px;
+  }
+
+  h2 {
+    font: 500 24px "Montserrat", sans-serif;
+    color: $light-black;
+  }
+
+  .positions {
+    list-style-type: none;
+    margin-top: 20px;
+
+    .position {
+      margin-left: -35px;
+      display: grid;
+      grid-template-columns: 130px auto;
+
+      img {
+        width: 140px;
+        height: 120px;
+        vertical-align: middle;
+      }
+
+      &__details {
+        margin-left: 20px;
+
+        .position__duration {
+          font: 500 14px "Montserrat", sans-serif;
+          color: $battleship-gray;
+        }
+
+        .position__title {
+          font: 600 16px "Montserrat", sans-serif;
+          color: $gray-black;
+        }
+
+        .position__summary {
+          font: 500 16px "Montserrat", sans-serif;
+          color: $battleship-gray;
+          line-height: 20px;
+          width: 280px;
+          text-align: justify;
+
+          @media only screen and (max-width: $small) {
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}

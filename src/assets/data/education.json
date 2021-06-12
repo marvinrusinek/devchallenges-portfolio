@@ -1,0 +1,26 @@
+[
+  {
+    "school": "NYU School of Professional Studies",
+    "school_logo": "assets/images/education/nyu_sps.png",
+    "school_url": "https://sps.nyu.edu",
+    "school_id": "NYUSPS",
+    "degree": "Certificates in Advanced Web Development and .NET Application Development",
+    "period": "Fall 2010-Spring 2012"
+  },
+  {
+    "school": "Pratt Institute School of Information",
+    "school_logo": "assets/images/education/pratt.png",
+    "school_url": "https://www.pratt.edu/academics/information/",
+    "school_id": "Pratt",
+    "degree": "Master of Science in Library and Information Science (MSLIS)",
+    "period": "Fall 2008-Spring 2010"
+  },
+  {
+    "school": "NYU Tandon School of Engineering (formerly Polytechnic University)",
+    "school_logo": "assets/images/education/nyu_poly.svg",
+    "school_url": "https://engineering.nyu.edu/",
+    "school_id": "NYUPoly",
+    "degree": "Bachelor of Science in Computer Science",
+    "period": "1999-2003"
+  }
+]

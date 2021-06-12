@@ -1,0 +1,16 @@
+<section class="education">
+  <h2>Education</h2>
+
+  <ul class="schools" *ngFor="let school of schools">
+    <li class="school">
+      <a [href]="school.school_url" target="_blank">
+        <img class="school-image" src={{school.school_logo}} loading="lazy" alt={{school.school}} title={{school.school}} />
+      </a>
+      <div class="education-details">
+        <h2 class="school-name">{{ school.school }}</h2>
+        <time class="period">{{ school.period }}</time>
+        <h3 class="degree">{{ school.degree }}</h3>
+      </div>
+    </li>
+  </ul>
+</section>

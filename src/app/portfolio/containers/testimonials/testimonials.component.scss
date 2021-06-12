@@ -1,0 +1,67 @@
+@import "../../styles/_variables.scss";
+
+.testimonials {
+  background-color: $white;
+  height: fit-content;
+
+  h2 {
+    font: 500 24px "Montserrat", sans-serif;
+    color: $light-black;
+    margin-left: 20px;
+  }
+
+  .my-testimonials {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+
+    .testimonial {
+      display: flex;
+      justify-content: center;
+      background-color: $white;
+      margin-left: -35px;
+      border-radius: 10px;
+
+      .testimonial-blockquote {
+        blockquote {
+          font-size: 24px;
+          font-style: oblique;
+          padding: 10px 0 0 50px;
+          border: none;
+
+          p.quote {
+            font: 800 24px 'Merriweather', sans-serif;
+            color: #353839;
+
+            &:before {
+              content: "\f10d";
+              font-family: 'Fontawesome';
+              float: left;
+              margin-right: 10px;
+              font-style: oblique;
+            }
+
+            &:after {
+              content: "\f10e";
+              font-family: 'Fontawesome';
+              float: right;
+              margin-right: 5px;
+              font-style: oblique;
+            }
+          }
+        }
+
+        cite.author {
+          color: #353839;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: bold;
+          text-align: right !important;
+          margin: 10px 20px 10px 10px;
+          margin-left: 130px;
+        }
+      }
+    }
+  }
+}

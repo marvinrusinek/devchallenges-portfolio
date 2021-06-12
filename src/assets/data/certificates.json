@@ -1,0 +1,57 @@
+[
+  {
+    "certTitle": "Front-End Developer",
+    "provider": "devChallenges.io",
+    "dateCompleted": "Anticipated June 2021"
+  },
+  {
+    "certTitle": "Responsive Web Developer",
+    "provider": "devChallenges.io",
+    "dateCompleted": "Anticipated June 2021"
+  },
+  {
+    "certTitle": "Angular, Reactive and Observable",
+    "provider": "Skillsoft",
+    "dateCompleted": "March 2020"
+  },
+  {
+    "certTitle": "Angular and NgRx",
+    "provider": "Skillsoft",
+    "dateCompleted": "March 2020"
+  },
+  {
+    "certTitle": "\"A Smarter Way to Learn JavaScript\"",
+    "provider": "asmarterwaytolearn.com",
+    "dateCompleted": "September 2018"
+  },
+  {
+    "certTitle": "\"Angular (Angular 2+) & NodeJS - The MEAN Stack Guide\"",
+    "provider": "Udemy",
+    "dateCompleted": "April 2018"
+  },
+  {
+    "certTitle": "\"Angular 5 (formerly Angular 2) - The Complete Guide\"",
+    "provider":  "Udemy",
+    "dateCompleted": "March 2018"
+  },
+  {
+    "certTitle": "\"Server-side Development with NodeJS\"",
+    "provider": "Coursera",
+    "dateCompleted": "October 2016"
+  },
+  {
+    "certTitle": "\"Multi-platform Mobile App Development with Web Technologies\"",
+    "provider": "Coursera",
+    "dateCompleted": "September 2016"
+  },
+  {
+    "certTitle": "\"Front-End JavaScript Frameworks: AngularJS\"",
+    "provider": "Coursera",
+    "dateCompleted": "September 2016"
+  },
+  {
+    "certTitle": "\"Front-End Web UI Frameworks and Tools\" (Bootstrap)",
+    "provider": "Coursera",
+    "dateCompleted": "August 2016"
+  }
+]

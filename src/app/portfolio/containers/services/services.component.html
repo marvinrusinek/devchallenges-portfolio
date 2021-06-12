@@ -1,0 +1,12 @@
+<section class="services">
+  <h2>Services</h2>
+  <div class="flex-container">
+    <ul *ngFor="let service of services">
+      <li>
+        <img src={{service.image}} loading="lazy" alt={{service.name}}>
+        <h4>{{ service.name }}</h4>
+        <p>{{ service.description }}</p>
+      </li>
+    </ul>
+  </div>
+</section>

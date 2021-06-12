@@ -1,0 +1,34 @@
+@import "../../styles/_variables";
+
+footer {
+  margin-top: 250px;
+  margin-bottom: 24px;
+
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: $light-gray;
+    margin: 0 auto;
+    margin-top: -40px;
+    width: 350px;
+
+    a {
+      color: $light-gray;
+      text-decoration: none;
+
+      &:hover {
+        color: $turquoise;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small) {
+  footer {
+    margin-top: 140px;
+    margin-right: -100px;
+    margin-left: -70px;
+    padding-bottom: 24px;
+  }
+}

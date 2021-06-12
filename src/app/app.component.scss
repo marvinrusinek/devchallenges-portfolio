@@ -1,0 +1,124 @@
+@import "portfolio/styles/_variables.scss";
+
+main {
+  background-color: $off-white;
+  display: grid;
+  grid-template-areas:
+    "biography biography frontend backend"
+    "biography biography projects projects"
+    "biography biography projects projects"
+    "experience experience projects projects"
+    "education education testimonials testimonials"
+    "education education services services"
+    "certificates blogs blogs blogs"
+    "certificates blogs blogs blogs"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 25px;
+
+  @media only screen and (max-width: $large) {
+    grid-template-areas:
+      "biography biography experience experience"
+      "frontend frontend backend backend"
+      "projects projects projects projects"
+      "projects projects projects projects"
+      "education education testimonials testimonials"
+      "certificates blogs blogs blogs"
+      "certificates blogs blogs blogs"
+      "footer footer footer footer";
+  }
+
+  @media only screen and (max-width: $medium) {
+    grid-template-areas:
+      "biography biography biography biography"
+      "frontend frontend backend backend"
+      "experience projects projects projects"
+      "experience projects projects projects"
+      "education projects projects projects"
+      "education blogs blogs blogs"
+      "certificates blogs blogs blogs"
+      "certificates testimonials testimonials testimonials"
+      "certificates services services services"
+      "footer footer footer footer";
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-template-areas:
+      "biography biography biography biography"
+      "biography biography biography biography"
+      "frontend frontend frontend frontend"
+      "backend backend backend backend"
+      "experience experience experience experience"
+      "projects projects projects projects"
+      "projects projects projects projects"
+      "education education education education"
+      "hobbies hobbies hobbies hobbies"
+      "certificates certificates certificates certificates"
+      "testimonials testimonials testimonials testimonials"
+      "services services services services"
+      "blogs blogs blogs blogs"
+      "footer footer footer footer";
+  }
+}
+
+.biography-area {
+  grid-area: biography;
+}
+
+.frontend-area {
+  grid-area: frontend;
+}
+
+.backend-area {
+  grid-area: backend;
+}
+
+.experiences-area {
+  grid-area: experience;
+}
+
+.education-area {
+  grid-area: education;
+}
+
+.certificates-area {
+  grid-area: certificates;
+}
+
+.services-area {
+  grid-area: services;
+}
+
+.projects-area {
+  grid-area: projects;
+}
+
+.hobbies-area {
+  grid-area: hobbies;
+}
+
+.blogs-area {
+  grid-area: blogs;
+}
+
+.testimonials-area {
+  grid-area: testimonials;
+}
+
+.footer-area {
+  grid-area: footer;
+}
+
+.heading {
+  font: 500 18px "Montserrat", sans-serif;
+  color: $light-black;
+}
+
+.component-default-styling {
+  background-color: $white;
+  border: none;
+  border-radius: $component-border-radius;
+  padding: $component-padding;
+}

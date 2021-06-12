@@ -1,0 +1,97 @@
+@import "../../styles/_variables";
+
+.biography {
+  background-color: $white;
+  border-radius: 12px;
+  margin: 0 auto;
+  width: 413px;
+  height: 100%;
+
+  .biography-image {
+    display: inline-block;
+    border-radius: 12px;
+
+    img {
+      width: 367px;
+      height: 359px;
+      border-radius: 12px;
+
+      @media only screen and (max-width: $medium) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .name {
+    clear: both;
+    font: 600 24px "Montserrat", sans-serif;
+    color: $light-black;
+    margin-top: 20px;
+  }
+
+  .title {
+    font: 500 18px "Montserrat", sans-serif;
+    color: $battleship-gray;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .email, .resume, .location {
+      font: 500 18px "Montserrat", sans-serif;
+      color: $light-black;
+      display: inline-flex;
+      vertical-align: middle;
+      padding-bottom: 10px;
+    }
+
+    .resume > a, .email > a {
+      text-decoration: none;
+
+      &:hover {
+        color: $turquoise;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .about {
+    font: 500 18px "Montserrat", sans-serif;
+    color: $battleship-gray;
+    line-height: 22px;
+    width: 333px;
+    margin-top: 20px;
+    text-align: justify;
+
+    @media only screen and (max-width: $small) {
+      width: 360px;
+    }
+  }
+
+  .social-media {
+    margin-left: 20%;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        float: left;
+        padding-right: 15px;
+      }
+    }
+
+    @media only screen and (max-width: $medium) {
+      padding-bottom: 40px !important;
+    }
+  }
+
+  @media only screen and (max-width: $medium) {
+    grid-template-columns: 240px 1fr;
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/_variables";
+
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+
+  mat-card {
+    background-color: $white;
+    border-radius: 12px;
+    width: 100%;
+
+    h2 {
+      font: 500 18px "Montserrat", sans-serif;
+      color: $light-black;
+      margin-left: 20px;
+    }
+  }
+}
+
+app-blog {
+  margin-top: 40px;
+}

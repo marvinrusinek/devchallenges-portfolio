@@ -1,0 +1,18 @@
+<section class="project">
+  <div class="project__image">
+    <a [href]="project.projectUrl" target="_blank">
+      <img [src]="project.imagePath" loading="lazy" alt={{project.title}} title={{project.title}} />
+    </a>
+  </div>
+  <div class="project__wrapper">
+    <div *ngFor="let tag of project.technologies">
+      <span class="project__technologies">#{{ tag }}</span>
+    </div>
+    <h2 class="project__title">{{ project.title }}</h2>
+    <p class="project__solution">{{ project.solution }}</p>
+    <div class="buttons">
+      <a class="demo__link" [href]="project.projectUrl" target="_blank">Demo</a>
+      <a class="code__link" [href]="project.codeUrl" target="_blank">Code</a>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/app/portfolio/styles/_variables";
+
+img:hover {
+  opacity: 0.6;
+}
+
+.ngx-pagination {
+  padding-left: 0 !important;
+}
+
+.ngx-pagination .current, .btn-info {
+  background-color: #2f80ed !important;
+  border: 1px solid #2f80ed !important;
+  border-radius: 4px !important;
+  font: 400 12px "Roboto", sans-serif !important;
+  color: $white !important;
+}
+
+.ngx-pagination .current:hover {
+  background: #17a2b8 !important;
+  border-radius: 4px !important;
+  border: 1px solid #17a2b8 !important;
+  font: 400 12px "Roboto", sans-serif !important;
+  color: $white !important;
+}
+
+.ngx-pagination .pagination-previous a::before,
+.ngx-pagination .pagination-previous.disabled::before,
+.ngx-pagination .pagination-next a::after,
+.ngx-pagination .pagination-next.disabled::after {
+  content: '' !important;
+}

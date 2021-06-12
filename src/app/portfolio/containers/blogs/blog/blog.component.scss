@@ -1,0 +1,111 @@
+@import "../../../styles/_variables";
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "blog-info-area blog-image-area"
+    "blog-redirect-area .";
+  height: fit-content;
+  border-radius: 12px;
+  background-color: $white;
+
+  @media only screen and (max-width: $medium) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "blog-image-area"
+      "blog-info-area"
+      "blog-redirect-area";
+  }
+
+  .blog__image, .blog__wrapper {
+    margin-top: 20px;
+  }
+
+  .blog__image {
+    display: inline-block;
+    border-radius: 12px;
+
+    img {
+      width: 467px;
+      height: 357px;
+      border-radius: 12px;
+
+      @media only screen and (max-width: $small) {
+        width: 400px;
+        height: 300px;
+        padding-left: 25px;
+      }
+    }
+  }
+
+  .blog__wrapper {
+    margin-left: 20px;
+
+    h6 {
+      font: 500 16px "Montserrat", sans-serif;
+      color: $very-light-gray;
+    }
+
+    h1 {
+      font: 500 24px "Montserrat", sans-serif;
+      color: $gray-black;
+      width: 178px;
+      word-wrap: break-word;
+      margin-top: 15px;
+
+      @media only screen and (max-width: $small) {
+        width: 400px;
+      }
+    }
+
+    .description {
+      font: 500 16px "Montserrat", sans-serif;
+      line-height: 20px;
+      color: $battleship-gray;
+      width: 310px;
+      height: auto;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  }
+
+  .link {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+
+    a {
+      font: 500 16px "Montserrat", sans-serif;
+      color: $dark-blue;
+      text-decoration: none;
+
+      &:hover {
+        color: $turquoise;
+      }
+
+      .more {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        .material-icons {
+          display: inline-flex;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.blog-image-area {
+  grid-area: blog-image-area;
+}
+.blog-info-area {
+  grid-area: blog-info-area;
+}
+.blog-redirect-area {
+  grid-area: blog-redirect-area;
+}
+
+

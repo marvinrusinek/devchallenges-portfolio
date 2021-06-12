@@ -1,0 +1,26 @@
+[
+  {
+    "skillName": "ASP.NET C#",
+    "percentage": "70"
+  },
+  {
+    "skillName": "Java",
+    "percentage": "70"
+  },
+  {
+    "skillName": "PHP/MySQL",
+    "percentage": "60"
+  },
+  {
+    "skillName": "NodeJS",
+    "percentage": "60"
+  },
+  {
+    "skillName": "MongoDB",
+    "percentage": "60"
+  },
+  {
+    "skillName": "Firebase",
+    "percentage": "50"
+  }
+]

@@ -1,0 +1,120 @@
+@import "../../../styles/variables";
+
+.project {
+  background-color: $white;
+  border-radius: 16px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  width: 100%;
+  height: fit-content;
+
+  @media only screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    width: 435px;
+    height: fit-content;
+  }
+
+  &__image {
+    display: inline-block;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    img {
+      width: 322px;
+      height: 274px;
+      border-radius: 12px;
+    }
+
+    @media only screen and (max-width: $small) {
+      margin-left: 10px;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 120px;
+
+    @media only screen and (max-width: $small) {
+      margin-left: -100px;
+    }
+
+    .project__technologies {
+      font: 500 16px "Montserrat", sans-serif;
+      color: $light-black;
+      padding-top: 20px;
+      padding-right: 10px;
+      float: left;
+
+      @media only screen and (max-width: $small) {
+        padding-top: 0;
+      }
+    }
+
+    .project__title {
+      font: 500 24px "Montserrat", sans-serif;
+      color: $gray-black;
+      margin-top: 40px;
+      margin-left: 0;
+
+      @media only screen and (max-width: $small) {
+        clear: both;
+        padding-top: 10px;
+      }
+    }
+
+    .project__solution {
+      font: 500 16px "Montserrat", sans-serif;
+      color: $battleship-gray;
+      line-height: 20px;
+      width: 464px;
+      height: 80px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      text-align: justify;
+
+      @media only screen and (max-width: $small) {
+        width: 380px;
+      }
+    }
+
+    .buttons {
+      clear: both;
+      margin-top: 100px;
+
+      @media only screen and (max-width: $small) {
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        border-radius: 12px;
+        padding: 10px;
+        margin-right: 20px;
+      }
+
+      .demo__link {
+        color: $white;
+        background-color: $dark-blue;
+        width: 136px;
+        height: 46px;
+      }
+
+      .code__link {
+        color: $dark-blue;
+        background-color: $white;
+        width: 119px;
+        height: 46px;
+        padding: 10px;
+        border: 1px solid $dark-blue;
+      }
+    }
+  }
+  &:hover {
+    border: 2px solid $turquoise;
+  }
+}

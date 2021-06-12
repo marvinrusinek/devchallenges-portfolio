@@ -1,0 +1,10 @@
+<section class="hobbies">
+  <h2>Hobbies</h2>
+  <ul class="hobbies-list" *ngFor="let hobby of hobbies">
+    <li class="hobby">
+      <img [src]="hobby.image" loading="lazy" alt={{hobby.hobby}} title={{hobby.hobby}} />
+      <h4>{{ hobby.hobby }}</h4>
+      <p class="description">{{ hobby.description }}</p>
+    </li>
+  </ul>
+</section>

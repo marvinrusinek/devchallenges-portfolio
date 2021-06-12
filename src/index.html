@@ -1,13 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>DevchallengesPortfolioMaster</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <base href="/">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="src/assets/images/devchallenges.png" type="image/x-icon" />
+    <title>Portfolio | devChallenges.io</title>
+  </head>
+  <body>
+    <app-root></app-root>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      /* replace email link to avoid spam bots */
+      function setEmail() {
+        let emailName = 'marvinrusinek';
+        let at = '@';
+        let domain = 'gmail.com';
+
+        let email = document.getElementById("email");
+        email.innerHTML = emailName + at + domain;
+        email.setAttribute('href', 'mailto:' + emailName + at + domain);
+      }
+
+      window.onload = function() {
+        setEmail();
+      }
+    </script>
+
+    <script type="text/javascript">
+      /* testimonials slick-carousel */
+      $(document).ready(function() {
+        $(".my-testimonials").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          cssEase: 'ease',
+          autoplay: true,
+          autoplaySpeed: 4000,
+          centerMode: true
+        });
+      });
+    </script>
+  </body>
 </html>

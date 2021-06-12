@@ -1,0 +1,18 @@
+<section class="blog" *ngIf="blog">
+  <div class="blog__image blog-image-area">
+    <a [href]="blog.linkUrl" target="_blank">
+      <img [src]="blog.image" loading="lazy" alt={{blog.title}} title={{blog.title}} />
+    </a>
+  </div>
+  <div class="blog__wrapper blog-info-area">
+    <h6>Blog</h6>
+    <h1>{{ blog.title }}</h1>
+    <time>{{ blog.date }}</time>
+    <p class="description" *ngFor="let description of blog.description">{{ description }}</p>
+  </div>
+  <div class="link blog-redirect-area">
+    <a [href]="blog.linkUrl" target="_blank">
+      <span class="more">See more <i class="material-icons">arrow_right_alt</i></span>
+    </a>
+  </div>
+</section>
