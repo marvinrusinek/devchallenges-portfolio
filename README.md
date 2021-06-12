@@ -1,27 +1,55 @@
-# DevchallengesPortfolioMaster
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+# Portfolio
 
-## Development server
+<h1 align="center">Portfolio</h1>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<div align="center">
+   Solution for a challenge from <a href="http://devchallenges.io">devChallenges.io</a>.
+</div>
 
-## Code scaffolding
+<div align="center">
+  <h3>
+    <a href="https://devchallenges-portfolio-seven.vercel.app">Demo</a>
+    <span> | </span>
+    <a href="https://www.github.com/marvinrusinek/devchallenges-portfolio">Solution</a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">Challenge</a>
+  </h3>
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of Contents
 
-## Build
+- Overview
+  - Built With
+- Features
+- Contact
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<!-- OVERVIEW -->
 
-## Running unit tests
+## Overview
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<b>Screenshot:</b> 
+<img src="http://www.marvinrusinek.com/portfolio-projects/devchallenges-portfolio.png" align="center">
 
-## Running end-to-end tests
+- Live demo can be found here: https://devchallenges-portfolio-seven.vercel.app
+- I used Angular 11, HTML5 and CSS3 to create the webpage.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Built With
+- Angular (https://www.angular.io/)
 
-## Further help
+## Features
+This webpage was created as a submission to a DevChallenges (https://www.devchallenges.io/challenges) challenge. The challenge (https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build a webpage that satisfies the fhttps://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFltollowing user stories:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- <b>User story:</b> I can see personal details
+- <b>User story:</b> I can see skills
+- <b>User story:</b> I can see projects
+- <b>User story:</b> I can filter projects by tag
+- <b>User story:</b> I can see hobbies or certificates
+- <b>User story (optional):</b> I can see experiences
+- <b>User story (optional):</b> I can see blogs
+- <b>User story (optional):</b> I can see projects on different pages
+
+## Contact
+- Website [marvinrusinek.com] (http://www.marvinrusinek.com)
+- GitHub [@marvinrusinek] (https://www.github.com/marvinrusinek)
+- Twitter [@marvinrusinek] (https://www.twitter.com/marvinrusinek)
